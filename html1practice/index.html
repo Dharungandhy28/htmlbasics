@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>12 types of input in HTML5</h2>
+    <hr>
+    <form action="">
+        <!--type file-->
+        <label for="file">select a file to upload:</label> <br> <br>
+        <input type="file" name="file" id="file" multiple>
+        <hr>
+
+        <!--type name-->
+        
+        <label for="name">Enter your  name:</label> <br> <br>
+        <input type="name" id="name" name="first name" placeholder="Enter your first name" minlength="10" maxlength="14"> <br> <br>
+        <input type="name"  name="last name" placeholder="Enter your last name" minlength="10" maxlength="14">
+        <hr>
+
+        <!--type email and password-->
+
+        <label for="email">Enter your email id:</label> <br> <br>
+        <input type="email" id="email" name="Enter your email" required placeholder="abc@gmail.com" minlength="10" maxlength="14"> <br> <br>
+        <label for="password">Enter your password:</label> <br> <br>
+        <input type="password" id="password" name="Enter your password" required minlength="10" maxlength="14"> <br> <br>
+        <label for="password">Enter your conform password:</label> <br> <br>
+        <input type="password" id="password" name="Enter your conform password" minlength="10" maxlength="14"> <br> <br>
+        <hr>
+
+        <!--type radio-->
+
+        <label for="color">What is your favourite color?</label> <br>
+        <input type="radio" id="color" name="color" value="red">Red <br> <br>
+        <input type="radio" id="color" name="color" value="red">Green <br> <br>
+        <input type="radio" id="color" name="color" value="red">White <br> <br>
+        <input type="radio" id="color" name="color" value="red">Black <br> <br>
+        <hr>
+
+        <!--type checkbox-->
+
+        <label for="">What is your favourite fruits?</label> <br>
+        <input type="checkbox" name="food" value="Apple">Apple <br> <br>
+        <input type="checkbox" name="food" value="Apple">Orange <br> <br>
+        <input type="checkbox" name="food" value="Apple">Grapes <br> <br>
+        <input type="checkbox" name="food" value="Apple">Pomogranate <br> <br>
+        <input type="checkbox" name="food" value="Apple">Pineapple <br> <br>
+        <input type="checkbox" name="food" value="Apple">Strawberry <br> <br>
+        <input type="checkbox" name="food" value="Apple">Blueberry <br> <br>
+        <input type="checkbox" name="food" value="Apple">Lemon <br> <br>
+        <input type="checkbox" name="food" value="Apple">Watermelon <br> <br>
+        <input type="checkbox" name="food" value="Apple">Muskmelon <br> <br>
+        <hr>
+
+        <!--type textmessage-->
+
+        <div>
+            <h4>Message:</h4>
+
+        <label for=></label>
+        <textarea placeholder="Enter your message" cols="30" rows="10"></textarea>
+        </div>
+        <hr>
+
+        <!--type dropdown-->
+        <div>
+            <h4>select:</h4>
+            <select>
+                <option value="TN">Tamil Nadu:</option>
+                <option value="AP">Andra pradesh:</option>
+                <option value="KE">Kerala:</option>
+                <option value="KA">Karnataka:</option>
+                <option value="ND">New Delhi:</option>
+                <option value="GJ">Gujarat:</option>
+                <option value="AS">Assam:</option>
+                <option value="BH">Bihar:</option>
+                <option value="HD">Hyderabad:</option>
+                <option value="MB">Mumbai:</option>
+            </select>
+        </div>
+        <hr>
+        
+        <!--type Url-->
+        <div>
+            <label for="url">Enter url:</label> <br> <br>
+            <input type="url" id="url" name="url" placeholder="www.google.com" minlength="14" maxlength="24">
+        </div>
+        <hr>
+
+        <!--type range-->
+        <div>
+            <label for="range">Enter the rage:</label> <br> <br>
+            <input type="range" id="range" name="range" value="100" min="100" max="10000">
+        </div>
+        <hr>
+
+        <!--type date-->
+        <div>
+            <label for="date">Date:</label> <br> <br>
+            <input type="date" id="date" name="date">
+        </div>
+        <hr>
+        
+        <!--submit-->
+        <div>
+            <label for="submit">submit:</label> <br> <br>
+            <button type="submit" id="submit" onclick="foo()">submit the form:</button><br>
+        </div>
+        <hr>
+    </form>
+    <script>
+        function foo(){
+            alert("data submitted successfully");
+        }
+    </script>
+    <hr>
+</body>
+</html>
